@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost:27017", {
+mongoose.connect("mongodb+srv://chouikh:123@cluster0.neb2c.mongodb.net/test", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true

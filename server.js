@@ -7,7 +7,7 @@ const ejs = require('ejs');
 app.set('view engine', 'ejs');
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://chouikh:123@cluster0.neb2c.mongodb.net/test', {
+mongoose.connect('mongodb+srv://chouikh:123@cluster0.neb2c.mongodb.net/support?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true

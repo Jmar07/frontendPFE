@@ -17,27 +17,27 @@ body{
     top: 50%;
 }
 .background .shape{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     position: absolute;
     border-radius: 50%;
 }
 .shape:first-child{
     background: linear-gradient(
-        #1845ad,
-        #23a2f6
+        #ff512f,
+        #f09819
     );
-    left: -90px;
-    top: 150px;
+    left: -35px;
+    top: -10px;
 }
 .shape:last-child{
     background: linear-gradient(
         to right,
-        #ff512f,
-        #f09819
+        #1845ad,
+        #23a2f6
     );
-    right: -80px;
-    bottom: 170px;
+    right: -35px;
+    bottom: -10px;
 }
 form{
     height: 520px;

@@ -1,16 +1,29 @@
-<form style="margin: auto; width: 220px; position:fixed; top: 15%; left: 10%;" action="/my-handling-form-page" method="post">
-    <ul>
-     <li>
-       <label for="name">Name:</label>
-       <input type="text" id="name" name="user_name">
-     </li>
-     <li>
-       <label for="mail">E-mail:</label>
-       <input type="email" id="mail" name="user_email">
-     </li>
-     <li>
-       <label for="msg">Message:</label>
-       <textarea id="msg" name="user_message"></textarea>
-     </li>
-    </ul>
-   </form>
+<form style="margin: auto; width: 500px; position:fixed; top: 15%; left: 10%;" action="/my-handling-form-page"
+  method="post">
+  <p>Client: <select size="1" name="D1">
+      <option>test1</option>
+      <option>test2</option>
+    </select></p>
+  <p>Module: <input type="text" name="T1" size="20" style="position:fixed; top: 22%; left: 30%;"></p>
+  <p>Personnel: <select size="1" name="D2" style="position:fixed; top: 27%; left: 30%;"></select></p>
+  <p>Accompanying: <select size="1" name="D3" style="position:fixed; top: 32%; left: 30%;"></select></p>
+  <label for="startdate">Start date: </label>
+
+  <input type="date" id="start" name="trip-start" value="2022-04-11" min="2022-04-11" max="3000-12-31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <label for="enddate">End Date: </label>
+
+  <input type="date" id="start" name="trip-start" value="2022-04-11" min="2022-04-11" max="3000-12-31">
+  <p>Duration: 
+    <input type="number" class="hr" value="00" size="2" name="b1" />
+    :
+    <input type="number" class="min" value="00" size="2" name="b2"></p> 
+  <label for="starttime">Start Time: </label>
+
+  <input type="time">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <label for="endtime">End Time: </label>
+
+  <input type="time">
+
+
+  <p><input type="submit" value="Submit" name="B1"><input type="reset" value="Reset" name="B2"></p>
+</form>

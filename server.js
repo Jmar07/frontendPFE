@@ -1,12 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const Router = require("./routes")
-
+const Router = require("./routes");
 const app = express();
+const ejs = require('ejs');
 
+app.set('view engine', 'ejs');
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://chouikh:123@cluster0.neb2c.mongodb.net/support?retryWrites=true&w=majority", {
+mongoose.connect('mongodb+srv://chouikh:123@cluster0.neb2c.mongodb.net/test', {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true
@@ -17,14 +18,23 @@ mongoose.connect("mongodb+srv://chouikh:123@cluster0.neb2c.mongodb.net/support?r
 }
 );
 
-const db = mongoose.connection;
-db.on("error", console.error.bind(console, "connection error: "));
-db.once("open", function () {
-  console.log("Connected successfully");
-});
+const clientAccessSchema = {
+  Login: String,
+  Mdp: String
+}
 
-app.use(Router);
+const Client = mongoose.model('Client', clientAccessSchema);
 
-app.listen(3000, () => {
+app.get('/', (req, res) => {
+  Client.find({}, function(err, client) {
+    res.render('login', {
+      clientList: client
+    })
+  })
+})
+
+
+
+app.listen(3000, function() {
   console.log('Server is running at port 3000');
-});
+})

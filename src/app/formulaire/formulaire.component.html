@@ -100,44 +100,51 @@
   </div>
 
   <div class="row form-group">
-    <label for="startdate" class="col-sm-1 col-form-label">Start Date: </label>
-    <div class="col-sm-4">
-        <div class="input-group date" id="startdate">
-            <input type="date" class="form-control">
+    <label for="startdate" class="col-sm-2 col-form-label">Start Date: </label>
+      <div class="col-sm-4">
+       <div class="input-group date" id="startdate">
+          <input type="date" class="form-control">
         </div>
-    </div>
-  </div>
-
-  <div class="row form-group">
-    <label for="enddate" class="col-sm-1 col-form-label">End Date: </label>
-    <div class="col-sm-4">
+      </div>
+    <label for="enddate" class="col-sm-2 col-form-label">End Date: </label>
+      <div class="col-sm-4">
         <div class="input-group date" id="enddate">
-            <input type="date" class="form-control">
+          <input type="date" class="form-control">
         </div>
-    </div>
-  </div>
-
-  <div class="row form-group">
-  <label for="duration" class="col-sm-1 col-form-label">Duration: </label>
-  <div class="col-sm-4"> 
-    <input type="number" class="hr" value="00" size="2" name="b1" />
-      :
-    <input type="number" class="min" value="00" size="2" name="b2"> 
-  </div>
-  </div>
-
-  <div class="row form-group">
-
-    <label for="starttime" class="col-sm-1 col-form-label">Start Time: </label>
-      <div class="col-sm-2">
-        <input type="time">
       </div>
+  </div>
 
-    <label for="endtime" class="col-sm-1 col-form-label">End Time: </label>
+  <div class="row form-group">
+    <label for="duration" class="col-sm-2 col-form-label">Duration: </label>
+      <div class="col-sm-3"> 
+        <div class="input-group date" id="hr">
+          <input type="number" class="hr" value="00" size="2" name="b1">
+        </div>
+      </div>
+      &nbsp;:
       <div class="col-sm-1">
-        <input type="time">
+        <div class="input-froup date" id="min">
+          <input type="number" class="min" value="00" size="2" name="b2">
+        </div>
+      </div> 
+  </div>
+
+  <div class="row form-group">
+    <label for="starttime" class="col-sm-2 col-form-label">Start Time: </label>
+      <div class="col-sm-4">
+       <div class="input-group date" id="starttime">
+          <input type="time" class="form-control">
+        </div>
+      </div>
+    <label for="endtime" class="col-sm-2 col-form-label">End Time: </label>
+      <div class="col-sm-4">
+        <div class="input-group date" id="endtime">
+          <input type="time" class="form-control">
+        </div>
       </div>
   </div>
+
+  
 
   <div class="form-group">
     <label for="nsheet" >Number Sheet:</label>
@@ -154,6 +161,8 @@
   <br>
 
   <div class="form-group">
+    <img src="https://scontent.ftun14-1.fna.fbcdn.net/v/t1.15752-9/278135650_384936450151922_2877029851411183536_n.png?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_ohc=SXlcrkSScWIAX8r0wFy&_nc_ht=scontent.ftun14-1.fna&oh=03_AVL_uq_1ejogGEyeoZ0zblKkYvlc73ur93dXqy7hxLqhyg&oe=627B7AA5"
+    width="18">
     <label for="attachapicture">Attach a picture</label>
     <input type="file" class="form-control-file" id="attachapicture">
   </div>

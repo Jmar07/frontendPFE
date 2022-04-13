@@ -1,0 +1,25 @@
+form{
+    height: 1300px;
+    width: 800px;
+    background-color: rgba(255,255,255,0.13);
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 730px;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(170, 170, 170, 0.6);
+    padding: 50px 35px;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+      width: 100%;
+    }
+  }
+@media screen and (max-height: 500px) {
+    form {
+      height: auto;
+    }
+}

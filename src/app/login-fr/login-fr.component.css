@@ -115,6 +115,89 @@ button{
 
 }
 
+.lang{
+    margin-top: -400px;
+    margin-left: -80px;
+    position: relative;
+    font-size: 0.9em;
+}
+
+.lang ul {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: none;
+    top: 40px;
+    left: 0;
+}
+
+.lang li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang ul li a {
+    width: 125px;
+    display: block;
+    padding: 5px 10px;
+}
+
+.lang ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+}
+
+.lang ul li a:hover {
+    background-color: #f2f2f2;
+}
+
+.fr:before {
+    background-image: url(https://scontent.ftun9-1.fna.fbcdn.net/v/t1.15752-9/278840105_410652163747770_4944033276774158433_n.png?stp=cp0_dst-png&_nc_cat=107&ccb=1-5&_nc_sid=ae9488&_nc_ohc=PhfHnGjjku4AX8nViNP&_nc_ht=scontent.ftun9-1.fna&oh=03_AVJTkT0IeZvo1bbyGK4RNMvhnGKQDtU0ny1myEOzajuoBA&oe=62865BE4);
+}
+
+.en:before {
+    background-image: url(https://scontent.ftun9-1.fna.fbcdn.net/v/t1.15752-9/278531207_531395575087184_6888622984974411333_n.png?stp=cp0_dst-png&_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_ohc=dtoP11A7HUcAX-IGOZx&_nc_ht=scontent.ftun9-1.fna&oh=03_AVJsbeiuLydHT3WRFMcXS4t1LsdSdL22N09oQW7U8BTuhQ&oe=6285530A);
+}
+
+.ar:before {
+    background-image: url(https://scontent.ftun9-1.fna.fbcdn.net/v/t1.15752-9/278545803_681599033103106_3367139100392745579_n.png?stp=cp0_dst-png&_nc_cat=107&ccb=1-5&_nc_sid=ae9488&_nc_ohc=rn7qDI4KnFQAX_AK_AC&_nc_ht=scontent.ftun9-1.fna&oh=03_AVI3-D48AhW_aVOAX6dLu_MuvVJKQvysY7_jpu7m5iGC9w&oe=6286AC9B);
+}
+
+
+.selected-lang{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+    width: 90px;
+}
+
+.selected-lang::before{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.lang:hover ul {
+    display: block;
+    width: 150px;
+    margin-left: 60px;}
+
+
 /*
 ::before,
 ::after{

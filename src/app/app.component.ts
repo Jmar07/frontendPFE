@@ -9,7 +9,12 @@ import { Router, RouterModule } from '@angular/router';
 export class AppComponent {
   title = 'projetPFE';
 
-  constructor( private router: Router ) { }
+  constructor( private router: Router ) {
+
+   }
+  onSend(){
+    
+  }
 
   goToPage(pageName:string):void{
     this.router.navigate([`${pageName}`]);

@@ -90,6 +90,44 @@ input{
 ::placeholder{
     color: #c4c4c4;
 }
+.form-user input {
+    border-radius: 10px;
+    outline: none;
+    padding: 0 13px;
+    border: 2px solid #ffffff;
+}
+.form-pass input {
+    border-radius: 10px;
+    outline: none;
+    padding: 0 13px;
+    border: 2px solid #ffffff;
+}
+.form-user label.label {
+    position: absolute;
+    top: 195px;
+    left: 45px;
+    font-size: 13px;
+    transition: top .3s;
+    color: #7a7b7c;
+}
+.form-pass label.label2 {
+    position: absolute;
+    top: 273px;
+    left: 45px;
+    font-size: 13px;
+    transition: top .3s;
+    color: #7a7b7c;
+}
+.form-user input:focus ~ label.label {
+    top: 33%;
+}
+.form-pass input:focus ~ label.label2 {
+    top: 49%;
+}
+.form-user label.label:focus:active {
+    font-size: 0px;
+}
+
 button{
     margin-top: 50px;
     width: 100%;

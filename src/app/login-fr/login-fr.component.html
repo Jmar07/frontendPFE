@@ -1,7 +1,7 @@
 
 <html lang="en">
     <head>
-        <title>Intervention Sheet</title>
+        <title>Fiche d'intervention</title>
     </head>
     <body>
       
@@ -12,19 +12,25 @@
         
         <form>
             <a href="https://csys.com.tn/" target="_blank"><img src="https://cdn.bitrix24.com/b14232851/landing/6be/6be08191cca1b62b0df3f81ab487ade6/_1_1x.png" class="logo"></a>
-            <b><p style="color:#2393b7; letter-spacing: 3px; line-height: 70px; margin: auto; padding-left: 70px;" >Intervention Sheet</p></b>
+            <b><p style="color:#2393b7; letter-spacing: 3px; line-height: 70px; margin: auto; padding-left: 70px;" >Fiche d'intervention</p></b>
   
-                      
-              <input type="text" id="username" placeholder="Enter your username" required>
-              <input type="password" id="password" placeholder="Enter your password" required>
-            
+               <div class="form-user">       
+                <input type="text" id="username" placeholder="" required>
+                <label for="username" class="label">Tapez votre nom d'utilisateur</label>
+               </div>
+                <label for=""></label>
+                <div class="form-pass">
+                <input type="password" id="password" placeholder="" required>
+                <label for="password" class="label2">Tapez votre mot de passe</label>
+
+              </div>
   <!----
               <label for="username">USERNAME</label>
               <input type="text" placeholder="Enter your username" id="username" required> 
               <label for="password">PASSWORD</label>
               <input type="password" placeholder="Enter your password" id="password" required>
   -->
-            <button type="submit" (click)="goToPage('formulaire')">Log In</button>
+            <button type="submit" (click)="goToPage('formulaire')">Connexion</button>
             <div class="lang">
               <div class="selected-lang">
                 fr

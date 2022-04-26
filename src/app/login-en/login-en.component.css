@@ -90,8 +90,47 @@ input{
 ::placeholder{
     color: #c4c4c4;
 }
+.form-user input {
+    border-radius: 10px;
+    outline: none;
+    padding: 0 13px;
+    border: 2px solid #ffffff;
+}
+.form-pass input {
+    border-radius: 10px;
+    outline: none;
+    padding: 0 13px;
+    border: 2px solid #ffffff;
+}
+.form-user label.label {
+    position: absolute;
+    top: 195px;
+    left: 45px;
+    font-size: 13px;
+    transition: top .3s;
+    color: #7a7b7c;
+}
+.form-pass label.label2 {
+    position: absolute;
+    top: 273px;
+    left: 45px;
+    font-size: 13px;
+    transition: top .3s;
+    color: #7a7b7c;
+}
+.form-user input:focus ~ label.label {
+    top: 33%;
+    display: block;
+}
+.form-pass input:focus ~ label.label2 {
+    top: 49%;
+}
+.form-user label.label:focus:active {
+    font-size: 0px;
+}
+
 button{
-    margin-top: 50px;
+    /*margin-top: 50px;
     width: 100%;
     background-color: #ebe6e6;
     color: #080710;
@@ -99,7 +138,26 @@ button{
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
+    cursor: pointer;*/
+    display: block;
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    margin: 1rem e;
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    background: linear-gradient(90deg, rgba(217,215,215,1) 0%, rgba(235,230,230,1) 35%, rgba(218,216,216,1) 100%);
     cursor: pointer;
+    color: #fff;
+    background-size: 200%;
+    transition: .5s;
+    
+}
+button:hover{
+    background-position: right;
 }
 .logo{
     margin: auto;
@@ -196,6 +254,7 @@ a {
     display: block;
     width: 150px;
     margin-left: 60px;}
+
 
 
 /*

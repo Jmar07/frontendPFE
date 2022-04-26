@@ -141,7 +141,9 @@ button{
     cursor: pointer;*/
     display: block;
     margin-top: 50px;
-    width: 100%;
+    width: 50%;
+    position: absolute;
+    left: 100px;
     height: 50px;
     border-radius: 25px;
     margin: 1rem e;
@@ -237,6 +239,8 @@ button:hover{
     justify-content: space-between;
     line-height: 2;
     width: 90px;
+    position: relative;
+    top: 80px;
 }
 
 .selected-lang::before{
@@ -253,7 +257,10 @@ a {
 .lang:hover ul {
     display: block;
     width: 150px;
-    margin-left: 60px;}
+    margin-left: 60px;
+    position: relative;
+    top: 80px;
+}
 
 
 

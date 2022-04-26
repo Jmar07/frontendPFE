@@ -1,4 +1,4 @@
-import { FormGroup, FormBuilder , FormControl } from '@angular/forms';
+import { FormGroup, FormBuilder , FormControl, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router, RouterModule } from '@angular/router';
@@ -10,8 +10,8 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   loginForm = new FormGroup({
-    email: new FormControl(''),
-    password: new FormControl(''),
+    email: new FormControl('',Validators.required),
+    password: new FormControl('',Validators.required),
   });
 
   constructor( private formBuilder : FormBuilder, private http:HttpClient, private router: Router ) { }
@@ -28,9 +28,17 @@ export class LoginComponent implements OnInit {
   }
 
 loginFun(){
-  this.http.post('http://localhost:8000/api/login',this.loginForm.value , {withCredentials:true /**to show coockies**/})
+
   
-.subscribe( ()=> this.router.navigateByUrl('/'));
+
+    this.http.post('http://localhost:8000/login',this.loginForm.value , {withCredentials:true /**to show coockies**/})
+  
+    .subscribe( (results)=> console.log(results)
+    
+    );
+
+
+
 
 
 }

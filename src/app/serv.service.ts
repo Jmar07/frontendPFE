@@ -11,10 +11,10 @@ export class ServService {
 
   constructor(private http: HttpClient) { }
 
-  getData(){
+  /* getData(){
     return this.http.get('http://localhost:8000/client')
     .pipe(
         map((response:[]) => response.map(item => item['des']))
       )
-  }
+  } */
 }

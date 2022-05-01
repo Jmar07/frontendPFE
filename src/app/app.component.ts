@@ -22,15 +22,15 @@ export class AppComponent  {
    }
 
    ngOnInit(){
-      this.getNames();
+      //this.getNames();
    }
 
-   getNames(){
+   /* getNames(){
      this.service.getData().subscribe(response => {
        this.options = response;
      })
    }
-
+ */
   onSend(){
     
   }

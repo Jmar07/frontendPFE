@@ -13,7 +13,6 @@ import { LoginEnComponent } from './login-en/login-en.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
-import { FormBuilder } from '@angular/forms';
 
 
 @NgModule({
@@ -36,7 +35,6 @@ import { FormBuilder } from '@angular/forms';
     BrowserAnimationsModule,
     MatInputModule,
     MatAutocompleteModule,
-    FormBuilder
 
   ],
   providers: [],

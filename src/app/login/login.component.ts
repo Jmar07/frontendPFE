@@ -1,3 +1,4 @@
+
 import { FormGroup, FormBuilder , FormControl, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -5,22 +6,22 @@ import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-login',
-  templateUrl: './login-fr.component.html',
-  styleUrls: ['./login-fr.component.css']
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  loginForm = new FormGroup({
-    email: new FormControl('',Validators.required),
-    password: new FormControl('',Validators.required),
-  });
 
-  constructor( private formBuilder : FormBuilder, private http:HttpClient, private router: Router ) { }
+  loginForm = new FormGroup({
+    username: new FormControl(null , Validators.required),
+    password: new FormControl(null , Validators.required)    
+  })
+
+  constructor( private formBuilder : FormBuilder, private http:HttpClient, private router: Router ) {
+ }
 
   ngOnInit(): void {
-    this.loginForm=this.formBuilder.group({
-      email:'',
-      password:''
-    });
+
+    
   }
 
   goToPage(pageName:string):void{
@@ -29,6 +30,8 @@ export class LoginComponent implements OnInit {
 
 loginFun(){
 
+  console.log(this.loginForm.controls);
+  
 
     this.http.post('http://localhost:8000/login',this.loginForm.value)
   

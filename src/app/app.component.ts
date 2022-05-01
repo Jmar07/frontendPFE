@@ -3,7 +3,7 @@ import { ServService } from './serv.service';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
-import { FormControl, FormGroup, Validators, FormBuilder } from "@angular/forms";
+import { FormControl, FormGroup, Validators, FormArray,FormBuilder } from "@angular/forms";
 
 
 @Component({

@@ -34,23 +34,36 @@
   <input type="time">
   -->
 
-  <div class="was-validated">
+  <!--<div class="was-validated">
     <label for="client">Client: </label>
-    <select class="form-control" id="client" name="client" required>
-      <option></option>
-      <option value="user 1">user 1</option>
-      <option value="user 2">user 2</option>
-      <option value="user 3">user 3</option>
-      <option value="user 4">user 4</option>
-      <option value="user 5">user 5</option>
-    </select>
+    <input matInput type="text" [matAutocomplete]="auto" />
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let item of options">
+        {{item}}
+      </mat-option>
+    </mat-autocomplete>
+  -->
+  <div class="container">
+    <mat-form-field>
+      <mat-label>
+          Client
+        </mat-label>
+        <input matInput type="text" [matAutocomplete]="auto" />
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let item of options" [value]="item">
+            {{item}}
+          </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+  </div>
+
     <div class="invalid-feedback">
       Champ obligatoire *
     </div>
     <div class="valid-feedback">
       Looks good!
     </div>
-  </div>
+
 
   <div class="was-validated">
     <label for="module">Module: </label>

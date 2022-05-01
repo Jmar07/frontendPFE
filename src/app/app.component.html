@@ -24,6 +24,8 @@
   .spacer {
     flex: 1;
   }
+  
+
 
   .toolbar {
     position: absolute;
@@ -33,7 +35,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #F8F8F8;
     color: rgb(0, 0, 0);
     font-weight: 600;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
@@ -76,6 +78,8 @@
 
 
 <div class="toolbar" role="banner">
+  <button (click)="goToPage('formulaire2')"> 3aaa </button>
+
     <a href="https://csys.com.tn/" target="_blank">
     <img
       width="120"
@@ -84,7 +88,10 @@
       src="https://cdn.bitrix24.com/b14232851/landing/6be/6be08191cca1b62b0df3f81ab487ade6/_1_1x.png"
     /></a>
       <button (click)="goToPage('login-fr')" style="position: fixed; left: 90%; top: 3%;">Log In</button>
+
+
   
   </div>
 
+ 
  <router-outlet></router-outlet>

@@ -29,17 +29,12 @@ export class LoginComponent implements OnInit {
 
 loginFun(){
 
-  
 
-    this.http.post('http://localhost:8000/login',this.loginForm.value , {withCredentials:true /**to show coockies**/})
+    this.http.post('http://localhost:8000/login',this.loginForm.value)
   
     .subscribe( (results)=> console.log(results)
     
     );
 
-
-
-
-
-}
+  }
 }

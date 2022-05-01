@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormulaireComponent implements OnInit {
 
+  options = ["ss", "za", "zzzzzzzzz"]
+
   constructor() { }
 
   ngOnInit(): void {

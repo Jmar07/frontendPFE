@@ -69,7 +69,7 @@
         "serve": {
 
           "options": {
-            "proxyConfig": "src/proxy.conf.json"
+            "browserTarget": "frontendPFE:build"
           },
 
           "builder": "@angular-devkit/build-angular:dev-server",

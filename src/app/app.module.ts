@@ -13,6 +13,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { IndexComponent } from './index/index.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { Dashboard2Component } from './dashboard2/dashboard2.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     FormulaireComponent,
     IndexComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    Dashboard2Component
 
   ],
   imports: [

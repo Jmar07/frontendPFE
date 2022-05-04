@@ -12,6 +12,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { IndexComponent } from './index/index.component';
 import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { LoginComponent } from './login/login.component';
     NavComponent,
     FormulaireComponent,
     IndexComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent
 
   ],
   imports: [

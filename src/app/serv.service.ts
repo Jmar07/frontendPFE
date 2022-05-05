@@ -4,6 +4,7 @@ import { response } from 'express';
 import { of, pipe } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -11,10 +12,14 @@ export class ServService {
 
   constructor(private http: HttpClient) { }
 
-   /*getData(){
-    return this.http.get('http://localhost:8000/client')
-    .pipe(
-        map((response:[]) => response.map(item => item['des']))
-      )
-  } */
+  opts = [];
+
+/*
+   getData(){
+    return this.opts.length ?
+
+    of(this.opts) :
+
+    this.http.get('https://localhost:8000/client').pipe(tap(data => this.opts = data))
+  }*/ 
 }

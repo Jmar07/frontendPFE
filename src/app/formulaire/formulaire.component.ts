@@ -12,7 +12,12 @@ import { map, startWith } from 'rxjs/operators';
 })
 export class FormulaireComponent implements OnInit {
 
-  options = ["ss", "za", "zzzzzzzzz"]
+  formulaireForm = new FormGroup({
+    username: new FormControl(null , Validators.required),
+    password: new FormControl(null , Validators.required)    
+  })
+
+  options = ["ss", "za", "zzzzzzzzz"];
 
   myControl = new FormControl(); 
 

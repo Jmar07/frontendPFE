@@ -49,6 +49,9 @@
           Client
         </mat-label>
         <input matInput type="text" [matAutocomplete]="auto" [formControl]="myControl" />
+        <mat-error *ngIf="formulaireForm.controls['username'].touched && formulaireForm.controls['username'].invalid">
+          <span> This field is required </span>
+          </mat-error>
         <mat-autocomplete #auto="matAutocomplete">
           <mat-option *ngFor="let option of filteredOptions |async" [value]="option">
             {{option}}
@@ -56,13 +59,6 @@
         </mat-autocomplete>
     </mat-form-field>
   </div>
-
-    <div class="invalid-feedback">
-      Champ obligatoire *
-    </div>
-    <div class="valid-feedback">
-      Looks good!
-    </div>
 
 
   <div class="was-validated">

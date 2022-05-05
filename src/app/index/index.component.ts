@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import * as data from '../particlesjs-config.json';
+
+
 
 @Component({
   selector: 'app-index',

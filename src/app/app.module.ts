@@ -25,8 +25,7 @@ import { Dashboard2Component } from './dashboard2/dashboard2.component';
     IndexComponent,
     LoginComponent,
     DashboardComponent,
-    Dashboard2Component
-
+    Dashboard2Component,
   ],
   imports: [
     BrowserModule,

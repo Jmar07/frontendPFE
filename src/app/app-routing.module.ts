@@ -12,8 +12,7 @@ const routes: Routes = [
   { path:'login',component: LoginComponent},
   { path:'formulaire',component: FormulaireComponent},
   { path: 'dashboard',component: DashboardComponent},
-  { path: 'dash',component: Dashboard2Component}
-
+  { path: 'dash',component: Dashboard2Component},
 ];
 
 @NgModule({

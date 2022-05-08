@@ -8,45 +8,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
   
   
-  <!--
-  <p>Client: <select size="1" name="D1">
-      <option>test1</option>
-      <option>test2</option>
-    </select></p>
-  <p>Module: <input type="text" name="T1" size="20" style="position:fixed; top: 22%; left: 30%;"></p>
-  <p>Personnel: <select size="1" name="D2" style="position:fixed; top: 27%; left: 30%;"></select></p>
-  <p>Accompanying: <select size="1" name="D3" style="position:fixed; top: 32%; left: 30%;"></select></p>
-  <label for="startdate">Start date: </label>
-
-  <input type="date" id="start" name="trip-start" value="2022-04-11" min="2022-04-11" max="3000-12-31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-  <label for="enddate">End Date: </label>
-
-  <input type="date" id="start" name="trip-start" value="2022-04-11" min="2022-04-11" max="3000-12-31">
-  <p>Duration: 
-    <input type="number" class="hr" value="00" size="2" name="b1" />
-    :
-    <input type="number" class="min" value="00" size="2" name="b2"></p> 
-  <label for="starttime">Start Time: </label>
-
-  <input type="time">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-  <label for="endtime">End Time: </label>
-
-  <input type="time">
-  -->
-
-  <!--<div class="was-validated">
-    <label for="client">Client: </label>
-    <input matInput type="text" [matAutocomplete]="auto" />
-    <mat-autocomplete #auto="matAutocomplete">
-      <mat-option *ngFor="let item of options">
-        {{item}}
-      </mat-option>
-    </mat-autocomplete>
-  -->
+  
   <div class="container">
-    <mat-form-field>
+    <button type="submit" (click)="logout()" > logout </button>
+    <mat-form-field style="width: 100%;">
       <mat-label>
-          Client
+          Client:
         </mat-label>
         <input matInput type="text" [matAutocomplete]="auto" [formControl]="myControl" />
         <mat-error *ngIf="formulaireForm.controls['username'].touched && formulaireForm.controls['username'].invalid">
@@ -58,6 +25,27 @@
           </mat-option>
         </mat-autocomplete>
     </mat-form-field>
+
+    <mat-form-field style="width: 100%;">
+      <mat-label>
+          Module:
+        </mat-label>
+        <input matInput type="text" [matAutocomplete]="auto" [formControl]="myControl" />
+        <mat-error *ngIf="formulaireForm.controls['username'].touched && formulaireForm.controls['username'].invalid">
+          <span> This field is required </span>
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field style="width: 100%;">
+          <mat-label>
+              Personnel:
+            </mat-label>
+            <input matInput type="text" [matAutocomplete]="auto" [formControl]="myControl" />
+            <mat-error *ngIf="formulaireForm.controls['username'].touched && formulaireForm.controls['username'].invalid">
+              <span> This field is required </span>
+              </mat-error>
+            </mat-form-field>
+
   </div>
 
 

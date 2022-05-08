@@ -1,3 +1,4 @@
+import { MyguardGuard } from './myguard.guard';
 import { Dashboard2Component } from './dashboard2/dashboard2.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { IndexComponent } from './index/index.component';
@@ -10,7 +11,7 @@ const routes: Routes = [
 
   { path:'',component: IndexComponent},
   { path:'login',component: LoginComponent},
-  { path:'formulaire',component: FormulaireComponent},
+  { path:'formulaire',component: FormulaireComponent , canActivate:[MyguardGuard]},
   { path: 'dashboard',component: DashboardComponent},
   { path: 'dash',component: Dashboard2Component},
 ];

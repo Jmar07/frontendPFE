@@ -10,9 +10,12 @@ import * as data from '../particlesjs-config.json';
 })
 export class IndexComponent implements OnInit {
 
+username:string = "";
+
   constructor() { }
 
   ngOnInit(): void {
+   // this.username = localStorage.getItem("username");
   }
 
 }

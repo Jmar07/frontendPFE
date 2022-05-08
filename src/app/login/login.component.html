@@ -27,9 +27,10 @@
         </div>
         
 
-       
         
         <form [formGroup]="loginForm" (submit)="loginFun()" >
+
+          <p *ngIf="error" style="color: darkred;"> {{error}} </p>
           
             <a href="https://csys.com.tn/" target="_blank"><img src="https://cdn.bitrix24.com/b14232851/landing/6be/6be08191cca1b62b0df3f81ab487ade6/_1_1x.png" class="logo"></a>
             <b><p style="color:#2393b7; letter-spacing: 3px; line-height: 70px; margin: auto; padding-left: 70px;" >Fiche d'intervention</p></b>
@@ -37,7 +38,7 @@
                <div>   
 
                 <mat-form-field  class="example-full-width" style="width: 100%;" appearance="fill">
-                  <mat-label>username</mat-label>
+                  <mat-label>Nom d'utilisateur</mat-label>
                   <input matInput formControlName="username" >
                   <mat-error *ngIf="loginForm.controls['username'].touched && loginForm.controls['username'].invalid">
                     <span> This field is required </span>
@@ -47,7 +48,7 @@
                 </mat-form-field> 
 
                 <mat-form-field  class="example-full-width" style="width: 100%;" appearance="fill">
-                  <mat-label>password</mat-label>
+                  <mat-label>Mot de passe</mat-label>
                   <input matInput formControlName="password" type="password" >
                   <mat-error *ngIf="loginForm.controls['password'].touched && loginForm.controls['password'].invalid">
                     <span> This field is required </span>
@@ -58,7 +59,7 @@
                 
                </div>
                 
-               
+              
             <button type="submit" (click)="loginFun()">Connexion</button>
             <ul>
               <li class="prev" (click)="goToPage('/')"><span></span></li>
